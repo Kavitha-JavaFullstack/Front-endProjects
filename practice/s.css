@@ -1,0 +1,30 @@
+.main{
+    display: flex;
+    height: 300px;
+    width: 500px;
+    border: 2px solid black;
+}
+.k{
+    display:flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 250px;
+
+
+}
+#b1{
+    height: 148px;
+    border:2px solid  black;
+}
+.me{
+    display:flex ;
+    width: 250px;
+    height:296px;
+    border: 2px solid black;
+}
+.me1{
+    display: inline-block;
+    justify-content: space-around;
+    
+
+}

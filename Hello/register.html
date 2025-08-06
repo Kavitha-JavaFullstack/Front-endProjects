@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+</head>
+<style>
+    body{
+        background-color:#f0f0f0;
+        font-family:Arial, Helvetica, sans-serif;
+        display:flex;
+        justify-content: center;
+        height:800px
+
+
+    }
+    row,email,pass,con{
+        border: 2px solid black;
+        width: auto;
+        height: 100px;
+        padding: 20px;
+        margin: 10px;
+        background-color: blue;
+
+}
+</style>
+<body>
+    <div class="main">
+        <h1>Register</h1>
+        <p>signup now and get full access to our app.</p>
+        <form >
+            <div class="row">
+                <input type="text" placeholder="firstname" required>
+                <input type="text" placeholder="Lastname" required>
+                   
+
+            </div>
+            <div id="email">
+                <input type="email" placeholder="Email" required>
+                 </div>
+                  
+                    <input type="text" placeholder="mm" required>
+                 
+                 <div id="pass">
+                    <input type="password" placeholder="Password">
+                    </div>
+            <div id="con">
+                <input type="password" placeholder="Conform Password" required>
+            </div>
+            <button class="submit">Submit</button>
+             </form>
+             <div class="bottom-text">
+                Already have an account?
+                <a href="#">Signin</a>
+             </div>
+    </div>
+    
+</body>
+</html>

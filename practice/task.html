@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display-Flex</title>
+    <style>
+      /* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header section */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header nav {
+  font-size: 1.2em;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content Area */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Left Column */
+.left-column {
+  width: 30%;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-column h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.news-item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Middle Column */
+.middle-column {
+  width: 40%;
+  text-align: center;
+}
+
+.middle-column h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.flag {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.stripe {
+  height: 90px;
+}
+
+.stripe.orange {
+  background-color: orange;
+}
+
+.stripe.white {
+  background-color: white;
+
+}
+
+.stripe.green {
+  background-color: green;
+}
+img{
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+}
+/* Right Column */
+.right-column {
+  width: 25%;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.right-column h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.right-column ul {
+  list-style: none;
+}
+
+.right-column ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.right-column ul li:last-child {
+  border-bottom: none;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>SBCE</h1>
+      <nav>
+        Home | Contact | Email
+      </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <!-- Left Column: News Feed -->
+      <div class="left-column">
+        <h2>News Feed</h2>
+        <div class="news-item">News 1</div>
+        <div class="news-item">News 2</div>
+        <div class="news-item">News 3</div>
+      </div>
+
+      <!-- Middle Column: National Flag -->
+      <div class="middle-column">
+        <h6>National Flag</h6>
+        <div class="flag">
+          <div class="stripe orange"></div>
+          <div class="stripe white">
+            <img src="./flag.png" alt="">
+          </div>
+          <div class="stripe green"></div>
+        </div>
+      </div>
+
+      <!-- Right Column: Courses -->
+      <div class="right-column">
+        <h2>Courses</h2>
+        <ul>
+          <li>IT</li>
+          <li>CSE</li>
+          <li>ECE</li>
+          <li>EEE</li>
+        </ul>
+      </div>
+    </div>
+ <h1>
+            <header>
+              SBCE
+            </header>
+          </h1>
+    <!-- Footer Section -->
+    <footer>All rights reserved @ 2025</footer>
+  </body>
+</html>

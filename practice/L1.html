@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout Inline</title>
+    <style>
+        /*.box{
+            display:inline-block;
+            height:130px;
+            width: 150px;
+            text-align: center;
+            background-color: rgb(84, 126, 112);
+            font-weight: bold;
+            margin: 10px;
+            line-height: 50px;
+            border: solid 2px black;
+
+        }*/
+        /*.box{
+            display: inline;
+            background-color: aqua;
+            margin-left:10px ;
+            margin-right:10px ;
+            padding-left: 10px;
+            padding-right: 10px;
+        
+        }*/
+        /* .box{ 
+            height:50px;
+            width: 100px;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+            border: 2px solid black;
+            }
+        .container{
+            display: flex;
+            flex-direction: row;
+             gap: 30px;
+            width: 100px;
+            margin: 10px;
+        }
+        
+        .side{
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+            width:100px;
+            gap: 10px;
+             }
+        .bo{
+             height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+        }*/
+        .container{
+            display: grid;
+            grid-template-columns: 100px ;
+            gap: 10px;
+        }
+        .box{
+
+        
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+     <div clss="side">
+        <div class="bo">box3</div>
+        <div class="bo">box4</div>
+        <div class="bo">box5</div>
+        <div class="bo">div6</div>
+        </div>
+    
+    </div>
+</body>
+</html>
